@@ -1,34 +1,38 @@
-i#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 /**
- *main - print all combinations of three different digits
- *Return: Always 0 (Success)
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 
 int main(void)
+/*
+ * prints combination of three digits
+ */
 {
-	int one;
-	int ten;
-	int hundred;
+int a, b, c;
+for (a = 0; a < 8; a++)
+{
+for (b = a + 1; b < 9; b++)
+{
+for (c = b + 1; c < 10; c++)
+{
+putchar((a % 10) + '0');
+putchar((b % 10) + '0');
+putchar((c % 10) + '0');
 
-	for (hundred = '0'; hundred <= '9'; hundred++) /*hundreds place*/
-	{
-		for (ten = (hundred + 1); ten <= '9'; ten++) /*tens=100s+1*/
-		{
-			for (one = (ten + 1); one <= '9'; one++) /*ones*/
-			{
-				putchar(hundred);
-				putchar(ten);
-				putchar(one);
-				if (hundred != '7' || ten != '8' || one != '9')
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
-	putchar('\n');
+if (a == 7 && b == 8 && c == 9)
+continue;
+putchar(',');
+putchar(' ');
+}
+}
+}
 
-	return (0);
+{
+putchar('\n');
+}
+return (0);
 }
