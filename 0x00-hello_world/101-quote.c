@@ -1,14 +1,13 @@
-#include<unistd.h>
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Prints the standard error sandwitched around the standard output
+ * main - prints to the standard error
  *
- * Return: returns 1
- **/
+ * Return: 1
+ */
+
 int main(void)
 {
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19 \n", 59);
-
-return (1);
+	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	return (1);
 }
