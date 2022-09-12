@@ -1,13 +1,13 @@
 #include <stdio.h>
+
 /**
- * using put to print out a text
- *
- * Always return zero for int main
+ *Main - This is the entry point
+ *Code prints output with puts command
+ *Return: Alway return 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-
-return 0;
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
