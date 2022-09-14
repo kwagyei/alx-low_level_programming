@@ -9,9 +9,9 @@
 void print_alphabet_x10(void)
 {
 /**
- * print_alphabet_x10 - while loop makes sure alphapbet is printed 10 times
+ * print_alphabet_x10 - while loop alphapbet is printed 10 times
  *
- * */
+ */
 
 int x;
 int count = 0;
