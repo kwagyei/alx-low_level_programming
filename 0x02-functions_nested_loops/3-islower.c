@@ -10,7 +10,7 @@
 
 int _islower(int c)
 /**
- * _idlower - function to check if character is lowercase and return 1
+ * _islower - function to check if character is lowercase and return 1
  */
 
 {

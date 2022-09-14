@@ -3,6 +3,10 @@
 /**
  * print_alphabet_x10 - prints the alphabet 10 times
  *
+ * @x: this is the charactor to be checked
+ *
+ * @count: this is the count
+ *
  * Return: Nothing
  */
 
